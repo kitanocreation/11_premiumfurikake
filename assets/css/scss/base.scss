@@ -1,0 +1,51 @@
+@charset 'UTF-8';
+
+@import './reset';
+
+$black: #414143;
+$white: #FFFFFF;
+
+$font1: "ten-mincho-text", serif;
+
+* {
+    font-family: $font1;
+    font-size: 14px;
+    font-weight: 400;
+    color: $black;
+    letter-spacing: .04em;
+    line-height: 150%;
+}
+
+html, body {
+    width: 100vw;
+}
+
+.pf-fv, main, section {
+    width: 100%;
+}
+
+a {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+@mixin bg {
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
