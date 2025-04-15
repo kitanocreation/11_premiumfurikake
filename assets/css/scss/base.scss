@@ -4,8 +4,11 @@
 
 $black: #414143;
 $white: #FFFFFF;
+$navy: #0F2262;
+$red: #B8193F;
 
 $font1: "ten-mincho-text", serif;
+$font2: "Noto Sans JP", sans-serif;
 
 * {
     font-family: $font1;
@@ -14,6 +17,10 @@ $font1: "ten-mincho-text", serif;
     color: $black;
     letter-spacing: .04em;
     line-height: 150%;
+}
+
+.pf-pc {
+    display: none !important;
 }
 
 html, body {
@@ -33,6 +40,26 @@ img {
     width: 100%;
 }
 
+@mixin font-m {
+    font-size: 14px;
+}
+
+@mixin font-l {
+    font-size: 16px;
+}
+
+@mixin font-ll {
+    font-size: 20px;
+}
+
+@mixin font-l-pc {
+    font-size: 18px;
+}
+
+@mixin font-ll-pc {
+    font-size: 24px;
+}
+
 @mixin bg {
     background-size: cover;
     background-position: center;
@@ -48,4 +75,57 @@ img {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin cta1 {
+    display: block;
+    width: 78.7vw;
+    height: 48px;
+    background-color: $navy;
+    margin: 16px auto 0 auto;
+    @include center;
+    @include font-l;
+    color: $white;
+    position: relative;
+
+    &::after {
+        content: '';
+        width: calc(100% - 8px);
+        height: calc(100% - 8px);
+        border: solid 1px $white;
+        @include absolute-center;
+    }
+}
+
+@mixin cta2 {
+    display: block;
+    width: 77.9vw;
+    height: 48px;
+    border-radius: 8px;
+    background-color: $red;
+    margin: 24px auto 0 auto;
+    @include center;
+    font-weight: 700;
+    color: $white;
+
+    &:active {
+        box-shadow: 0 0 0 0 transparent;
+        transform: translateY(2px)
+    }           
+}
+
+@mixin cta1-pc {
+    width: 29.7vw;
+    @include font-l-pc;
+}
+
+@mixin cta2-pc {
+    width: 22.8vw;
 }

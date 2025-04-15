@@ -87,6 +87,10 @@ pre {
   line-height: 150%;
 }
 
+.pf-pc {
+  display: none !important;
+}
+
 html, body {
   width: 100vw;
 }

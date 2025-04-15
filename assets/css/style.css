@@ -87,6 +87,10 @@ pre {
   line-height: 150%;
 }
 
+.pf-pc {
+  display: none !important;
+}
+
 html, body {
   width: 100vw;
 }
@@ -116,7 +120,7 @@ html body .pf-fv h1 {
   padding-top: 19px;
   margin: 0 auto;
 }
-html body .pf-fv div {
+html body .pf-fv .pf-treat {
   width: 100%;
   height: 16vw;
   display: flex;
@@ -125,9 +129,6 @@ html body .pf-fv div {
   left: 50%;
   transform: translate(-50%, 50%);
   z-index: 1;
-}
-html body .pf-fv div img {
-  height: 100%;
 }
 html body .pf_main {
   background-image: url("https://gigaplus.makeshop.jp/kitanoace/15_premiumfurikake/assets/img/main_bg.webp");
@@ -158,4 +159,214 @@ html body .pf_main .pf-epilogue h2 {
 html body .pf_main .pf-epilogue p {
   margin-top: 10px;
   font-size: 16px;
+}
+html body .pf_main .pf-detail {
+  padding-bottom: 80px;
+  margin-top: 90px;
+}
+html body .pf_main .pf-detail article {
+  margin-top: 160px;
+}
+html body .pf_main .pf-detail article .catchcopy {
+  font-size: 20px;
+  color: #0F2262;
+  text-align: center;
+}
+html body .pf_main .pf-detail article .con {
+  width: 91.5vw;
+  border-radius: 100px 100px 12px 12px;
+  background-color: #FFFFFF;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+html body .pf_main .pf-detail article .con h2 {
+  padding-top: 64px;
+  font-size: 20px;
+  text-align: center;
+}
+html body .pf_main .pf-detail article .con p:nth-of-type(1) {
+  width: 78.7vw;
+  margin: 16px auto 0 auto;
+}
+html body .pf_main .pf-detail article .con .pf-price {
+  width: 78.7vw;
+  margin: 16px auto 0 auto;
+}
+html body .pf_main .pf-detail article .con .pf-price span {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+html body .pf_main .pf-detail article .con .pf-cta {
+  display: block;
+  width: 78.7vw;
+  height: 48px;
+  background-color: #0F2262;
+  margin: 16px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #FFFFFF;
+  position: relative;
+}
+html body .pf_main .pf-detail article .con .pf-cta::after {
+  content: "";
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  border: solid 1px #FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+html body .pf_main .pf-detail article:nth-of-type(1) {
+  margin-top: 0;
+}
+html body .pf_main .pf-recommend {
+  background-color: #FFFFFF;
+  padding-top: 80px;
+}
+html body .pf_main .pf-recommend * {
+  font-family: "Noto Sans JP", sans-serif;
+}
+html body .pf_main .pf-recommend h2 {
+  padding-left: 16px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #414143;
+}
+html body .pf_main .pf-recommend ul {
+  width: calc(100% - 32px);
+  margin: 40px auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+html body .pf_main .pf-recommend ul li {
+  width: calc(50% - 8px);
+  margin-top: 40px;
+}
+html body .pf_main .pf-recommend ul li a {
+  display: block;
+  color: #414143;
+}
+html body .pf_main .pf-recommend ul li a h3 {
+  padding-top: 3px;
+}
+html body .pf_main .pf-recommend ul li:nth-of-type(even) {
+  margin-left: 16px;
+}
+html body .pf_main .pf-recommend ul li:nth-of-type(1), html body .pf_main .pf-recommend ul li:nth-of-type(2) {
+  margin-top: 0;
+}
+html body .pf_main .pf-recommend .pf-cta {
+  display: block;
+  width: 77.9vw;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #B8193F;
+  margin: 24px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+html body .pf_main .pf-recommend .pf-cta:active {
+  box-shadow: 0 0 0 0 transparent;
+  transform: translateY(2px);
+}
+html body .pf_main .pf-recommend:nth-last-of-type(1) {
+  padding: 100px 0;
+}
+
+@media screen and (min-width: 768px) {
+  * {
+    font-size: 16px;
+  }
+  .pf-sp {
+    display: none !important;
+  }
+  .pf-pc {
+    display: block !important;
+  }
+  html body .pf-fv {
+    height: 46.9vw;
+    background-image: url("https://gigaplus.makeshop.jp/kitanoace/15_premiumfurikake/assets/img/responsive/fv_bg.jpg");
+  }
+  html body .pf-fv h1 {
+    width: 46.9vw;
+    padding-top: 0;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+  }
+  html body .pf-fv .pf-treat {
+    height: 6.3vw;
+  }
+  html body .pf_main .pf-epilogue {
+    height: 53vw;
+  }
+  html body .pf_main .pf-epilogue img {
+    width: 63vw;
+  }
+  html body .pf_main .pf-epilogue h2 {
+    padding-top: 175px;
+    font-size: 32px;
+  }
+  html body .pf_main .pf-epilogue p {
+    font-size: 18px;
+  }
+  html body .pf_main .pf-detail {
+    padding-bottom: 100px;
+  }
+  html body .pf_main .pf-detail article .con {
+    width: 35.9vw;
+  }
+  html body .pf_main .pf-detail article .con h2 {
+    width: 29.7vw;
+    margin: 0 auto;
+    font-size: 24px;
+    text-align: initial;
+  }
+  html body .pf_main .pf-detail article .con p:nth-of-type(1) {
+    width: 29.7vw;
+  }
+  html body .pf_main .pf-detail article .con .pf-price {
+    width: 29.7vw;
+  }
+  html body .pf_main .pf-detail article .con .pf-price span {
+    font-size: 24px;
+  }
+  html body .pf_main .pf-detail article .con .pf-cta {
+    width: 29.7vw;
+    font-size: 18px;
+  }
+  html body .pf_main .pf-recommend h2 {
+    padding-left: 160px;
+    font-size: 28px;
+  }
+  html body .pf_main .pf-recommend ul {
+    width: calc(100% - 320px);
+  }
+  html body .pf_main .pf-recommend ul li {
+    width: calc((100% - 80px) / 6);
+    margin: 0 0 0 16px;
+  }
+  html body .pf_main .pf-recommend ul li:nth-of-type(even) {
+    margin-left: 16px;
+  }
+  html body .pf_main .pf-recommend ul li:nth-of-type(1) {
+    margin-left: 0;
+  }
+  html body .pf_main .pf-recommend .pf-cta {
+    width: 22.8vw;
+  }
+  html body .pf_main .pf-lp {
+    padding-top: 100px;
+  }
+  html body .pf_main .pf-lp ul li {
+    width: calc((100% - 48px) / 4);
+  }
 }
