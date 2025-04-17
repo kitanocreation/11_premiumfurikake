@@ -109,15 +109,15 @@ img {
 }
 
 html body .pf-fv {
-  height: 100vw;
-  background-image: url("https://gigaplus.makeshop.jp/kitanoace/15_premiumfurikake/assets/img/fv_bg.jpg");
+  height: 125.1vw;
+  background-image: url("https://gigaplus.makeshop.jp/kitanoace/15_premiumfurikake/assets/img/fv_bg_re.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
 }
 html body .pf-fv h1 {
   width: 69.3vw;
-  padding-top: 19px;
+  padding-top: 20px;
   margin: 0 auto;
 }
 html body .pf-fv .pf-treat {
@@ -163,54 +163,100 @@ html body .pf_main .pf-epilogue p {
 html body .pf_main .pf-detail {
   padding-bottom: 80px;
   margin-top: 90px;
+  overflow-x: hidden;
 }
 html body .pf_main .pf-detail article {
-  margin-top: 160px;
+  margin-top: 176px;
 }
 html body .pf_main .pf-detail article .catchcopy {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 20px;
   color: #0F2262;
   text-align: center;
 }
-html body .pf_main .pf-detail article .con {
-  width: 91.5vw;
-  border-radius: 100px 100px 12px 12px;
-  background-color: #FFFFFF;
-  padding-bottom: 40px;
-  margin: 0 auto;
-}
-html body .pf_main .pf-detail article .con h2 {
-  padding-top: 64px;
-  font-size: 20px;
-  text-align: center;
-}
-html body .pf_main .pf-detail article .con p:nth-of-type(1) {
-  width: 78.7vw;
-  margin: 16px auto 0 auto;
-}
-html body .pf_main .pf-detail article .con .pf-price {
-  width: 78.7vw;
-  margin: 16px auto 0 auto;
-}
-html body .pf_main .pf-detail article .con .pf-price span {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-}
-html body .pf_main .pf-detail article .con .pf-cta {
+html body .pf_main .pf-detail article .catchcopy span {
   display: block;
-  width: 78.7vw;
+  width: 35px;
+  margin-right: 4px;
+}
+html body .pf_main .pf-detail article .catchcopy span:nth-of-type(2) {
+  transform: translateY(-7.5px) rotate(180deg);
+}
+html body .pf_main .pf-detail article .con {
+  position: relative;
+}
+html body .pf_main .pf-detail article .con:nth-of-type(1) {
+  width: 100%;
+  height: 80vw;
+  margin-top: 24px;
+  z-index: 1;
+}
+html body .pf_main .pf-detail article .con:nth-of-type(1) .bg {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+html body .pf_main .pf-detail article .con:nth-of-type(1) .treat1 {
+  width: 39.7vw;
+  position: absolute;
+  top: 16px;
+  left: -16px;
+  z-index: 1;
+}
+html body .pf_main .pf-detail article .con:nth-of-type(2) {
+  margin-top: 16px;
+}
+html body .pf_main .pf-detail article .con:nth-of-type(2) h2 {
+  padding-left: 16px;
+  font-size: 20px;
+}
+html body .pf_main .pf-detail article .con:nth-of-type(2) p:nth-of-type(1) {
+  width: calc(100% - 32px);
+  border-top: dashed 1px #D8D8DB;
+  padding-top: 12px;
+  margin: 12px auto 0 auto;
+}
+html body .pf_main .pf-detail article .con:nth-of-type(2) .pf-price {
+  width: calc(100% - 32px);
+  margin: 12px auto 0 auto;
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  font-family: "Noto Serif JP", serif;
+  font-size: 28px;
+  font-weight: 900;
+}
+html body .pf_main .pf-detail article .con:nth-of-type(2) .pf-price span {
+  font-size: 16px;
+  transform: translateY(-2.5px);
+}
+html body .pf_main .pf-detail article .con:nth-of-type(2) .pf-price span:nth-of-type(1) {
+  margin-right: 7px;
+}
+html body .pf_main .pf-detail article .con:nth-of-type(2) .pf-price span:nth-of-type(2) {
+  margin-left: 8px;
+}
+html body .pf_main .pf-detail article .con:nth-of-type(2) .pf-cta {
+  display: block;
+  width: calc(100% - 32px);
   height: 48px;
   background-color: #0F2262;
-  margin: 16px auto 0 auto;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 16px;
   color: #FFFFFF;
   position: relative;
+  margin-top: 12px;
+  z-index: 1;
 }
-html body .pf_main .pf-detail article .con .pf-cta::after {
+html body .pf_main .pf-detail article .con:nth-of-type(2) .pf-cta::after {
   content: "";
   width: calc(100% - 8px);
   height: calc(100% - 8px);
@@ -220,8 +266,32 @@ html body .pf_main .pf-detail article .con .pf-cta::after {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+html body .pf_main .pf-detail article .con:nth-of-type(2) .treat2 {
+  width: 101.9vw;
+  position: absolute;
+  left: 10.7vw;
+  bottom: 0;
+  transform: translateY(56px);
+  opacity: 0.15;
+  z-index: 0;
+}
 html body .pf_main .pf-detail article:nth-of-type(1) {
   margin-top: 0;
+}
+html body .pf_main .pf-detail article:nth-of-type(2) .con:nth-of-type(2) .treat2 {
+  width: 138.9vw;
+}
+html body .pf_main .pf-detail article:nth-of-type(3) .con:nth-of-type(2) .treat2 {
+  width: 98.7vw;
+}
+html body .pf_main .pf-detail article:nth-of-type(4) .con:nth-of-type(2) .treat2 {
+  width: 126.4vw;
+}
+html body .pf_main .pf-detail article:nth-of-type(5) .con:nth-of-type(2) .treat2 {
+  width: 116vw;
+}
+html body .pf_main .pf-detail article:nth-of-type(6) .con:nth-of-type(2) .treat2 {
+  width: 121vw;
 }
 html body .pf_main .pf-recommend {
   background-color: #FFFFFF;
@@ -292,7 +362,7 @@ html body .pf_main .pf-recommend:nth-last-of-type(1) {
   }
   html body .pf-fv {
     height: 46.9vw;
-    background-image: url("https://gigaplus.makeshop.jp/kitanoace/15_premiumfurikake/assets/img/responsive/fv_bg.jpg");
+    background-image: url("https://gigaplus.makeshop.jp/kitanoace/15_premiumfurikake/assets/img/responsive/fv_bg_re.jpg");
   }
   html body .pf-fv h1 {
     width: 46.9vw;
@@ -321,27 +391,66 @@ html body .pf_main .pf-recommend:nth-last-of-type(1) {
   html body .pf_main .pf-detail {
     padding-bottom: 100px;
   }
-  html body .pf_main .pf-detail article .con {
-    width: 35.9vw;
-  }
-  html body .pf_main .pf-detail article .con h2 {
-    width: 29.7vw;
-    margin: 0 auto;
-    font-size: 24px;
-    text-align: initial;
-  }
-  html body .pf_main .pf-detail article .con p:nth-of-type(1) {
-    width: 29.7vw;
-  }
-  html body .pf_main .pf-detail article .con .pf-price {
-    width: 29.7vw;
-  }
-  html body .pf_main .pf-detail article .con .pf-price span {
+  html body .pf_main .pf-detail article .catchcopy {
     font-size: 24px;
   }
-  html body .pf_main .pf-detail article .con .pf-cta {
-    width: 29.7vw;
+  html body .pf_main .pf-detail article .catchcopy span {
+    width: 46px;
+    margin-right: 8px;
+  }
+  html body .pf_main .pf-detail article .container {
+    width: 75vw;
+    height: 31.3vw;
+    margin: 24px auto 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  html body .pf_main .pf-detail article .container .con:nth-of-type(1) {
+    width: 52.1%;
+    height: 100%;
+    margin-top: 0;
+  }
+  html body .pf_main .pf-detail article .container .con:nth-of-type(1) .bg {
+    width: 100%;
+  }
+  html body .pf_main .pf-detail article .container .con:nth-of-type(1) .treat1 {
+    width: 14.1vw;
+    top: 20px;
+    left: -20px;
+  }
+  html body .pf_main .pf-detail article .container .con:nth-of-type(2) {
+    width: calc(47.9% - 40px);
+    margin-top: 0;
+    margin-left: 40px;
+  }
+  html body .pf_main .pf-detail article .container .con:nth-of-type(2) h2 {
+    padding-left: 0;
+    font-size: 24px;
+  }
+  html body .pf_main .pf-detail article .container .con:nth-of-type(2) p:nth-of-type(1) {
+    width: 100%;
+    padding-top: 16px;
+    margin: 16px 0 0 0;
+  }
+  html body .pf_main .pf-detail article .container .con:nth-of-type(2) .pf-price {
+    width: 100%;
+    margin: 16px 0 0 0;
+  }
+  html body .pf_main .pf-detail article .container .con:nth-of-type(2) .pf-price span {
+    font-size: 16px;
+  }
+  html body .pf_main .pf-detail article .container .con:nth-of-type(2) .pf-price span:nth-of-type(1) {
+    margin-right: 8px;
+  }
+  html body .pf_main .pf-detail article .container .con:nth-of-type(2) .pf-cta {
+    width: 100%;
     font-size: 18px;
+    margin-top: 16px;
+  }
+  html body .pf_main .pf-detail article .container .con:nth-of-type(2) .treat2 {
+    width: 35.9vw;
+    left: 6.3vw;
+    transform: translateY(104px);
   }
   html body .pf_main .pf-recommend h2 {
     padding-left: 160px;

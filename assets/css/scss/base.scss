@@ -6,9 +6,11 @@ $black: #414143;
 $white: #FFFFFF;
 $navy: #0F2262;
 $red: #B8193F;
+$grey: #D8D8DB;
 
 $font1: "ten-mincho-text", serif;
 $font2: "Noto Sans JP", sans-serif;
+$font3: "Noto Serif JP", serif;
 
 * {
     font-family: $font1;
@@ -52,6 +54,10 @@ img {
     font-size: 20px;
 }
 
+@mixin font-m-pc {
+    font-size: 16px;
+}
+
 @mixin font-l-pc {
     font-size: 18px;
 }
@@ -86,10 +92,10 @@ img {
 
 @mixin cta1 {
     display: block;
-    width: 78.7vw;
+    width: calc(100% - 32px);
     height: 48px;
     background-color: $navy;
-    margin: 16px auto 0 auto;
+    margin: 0 auto;
     @include center;
     @include font-l;
     color: $white;
@@ -122,7 +128,7 @@ img {
 }
 
 @mixin cta1-pc {
-    width: 29.7vw;
+    width: 100%;
     @include font-l-pc;
 }
 
