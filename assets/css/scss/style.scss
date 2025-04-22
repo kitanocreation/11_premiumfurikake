@@ -30,7 +30,6 @@ html {
 
         .pf_main {
             background-image: url('https://gigaplus.makeshop.jp/kitanoace/15_premiumfurikake/assets/img/main_bg.webp');
-            @include bg;
 
             .pf-epilogue {
                 height: 153.9vw;
@@ -45,6 +44,10 @@ html {
                     transform: translate(-50%, 40px) rotate(-6deg);
                 }
 
+                div {
+                    height: fit-content;
+                }
+
                 h2, p {
                     position: relative;
                     text-align: center;
@@ -52,8 +55,9 @@ html {
                 }
 
                 h2 {
-                    padding-top: 156px;
+                    margin-top: 156px;
                     font-size: 28px;
+                    color: $navy;
                 }
 
                 p {
@@ -121,10 +125,14 @@ html {
                             @include font-ll;
                         }
 
+                        .pf-line {
+                            display: block;
+                            width: calc(100% - 32px);
+                            margin: 8px auto 0 auto;
+                        }
+
                         p:nth-of-type(1) {
                             width: calc(100% - 32px);
-                            border-top: dashed 1px $grey;
-                            padding-top: 12px;
                             margin: 12px auto 0 auto;
                         }
 
@@ -137,6 +145,8 @@ html {
                             font-family: $font3;
                             font-size: 28px;
                             font-weight: 900;
+                            position: relative;
+                            z-index: 1;
 
                             span {
                                 @include font-l;
@@ -318,6 +328,7 @@ html {
             }
 
             .pf_main {
+                background-repeat: repeat;
 
                 .pf-epilogue {
                     height: 53vw;
@@ -327,7 +338,7 @@ html {
                     }
 
                     h2 {
-                        padding-top: 175px;
+                        margin-top: 175px;
                         font-size: 32px;
                     }
 
@@ -383,9 +394,13 @@ html {
                                     @include font-ll-pc;
                                 }
 
+                                .pf-line {
+                                    width: 100%;
+                                    margin: 12px 0 0 0;
+                                }
+
                                 p:nth-of-type(1) {
                                     width: 100%;
-                                    padding-top: 16px;
                                     margin: 16px 0 0 0;
                                 }
 
@@ -411,6 +426,25 @@ html {
                                     width: 35.9vw;
                                     left: 6.3vw;
                                     transform: translateY(104px);
+                                }
+                            }
+                        }
+                    }
+
+                    article:nth-of-type(even) {
+
+                        .container {
+                            flex-direction: row-reverse;
+
+                            .con:nth-of-type(1) {
+                                margin-left: 40px;
+                            }
+
+                            .con:nth-of-type(2) {
+                                margin-left: 0;
+
+                                .treat2 {
+                                    left: -6.3vw;
                                 }
                             }
                         }

@@ -107,38 +107,3 @@ a {
 img {
   width: 100%;
 }
-
-.fadein {
-  opacity: 0;
-  animation: fadein 1s 0.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.fadeup {
-  opacity: 0;
-  transform: translateY(30px);
-}
-
-.fadeup-on {
-  animation: fadeup 1s cubic-bezier(0.33, 1, 0.68, 1) forwards;
-}
-@keyframes fadeup {
-  0% {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
