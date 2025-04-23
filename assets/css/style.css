@@ -200,10 +200,11 @@ html body .pf_main .pf-epilogue p {
 html body .pf_main .pf-detail {
   padding-bottom: 80px;
   margin-top: 90px;
-  overflow-x: hidden;
 }
 html body .pf_main .pf-detail article {
-  margin-top: 176px;
+  padding-bottom: 60px;
+  margin-top: 116px;
+  overflow-x: hidden;
 }
 html body .pf_main .pf-detail article .catchcopy {
   margin: 0 auto;
@@ -439,6 +440,11 @@ html body .pf_main .pf-recommend:nth-last-of-type(1) {
   }
   html body .pf_main .pf-detail {
     padding-bottom: 100px;
+  }
+  html body .pf_main .pf-detail article {
+    padding-bottom: 0;
+    margin-top: 176px;
+    overflow-x: initial;
   }
   html body .pf_main .pf-detail article .catchcopy {
     font-size: 24px;
